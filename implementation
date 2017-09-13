@@ -6,6 +6,7 @@ void goodgame (string n)
 {
 if (n="LeagueofLegends")
 {
+{
 cout <<"Good Game";
 name = n;
 }
@@ -35,3 +36,4 @@ cout <<"Game Name "<< name<< endl;
 cout << "Time Played"<< playtime<< endl;
 }
 }
+#endif;
