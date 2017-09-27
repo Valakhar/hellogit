@@ -1,36 +1,27 @@
 #include "Game.h"
-#inlcude <iostream>
-using namespacestd;
-void goodgame (string n)
-{
-if (n="LeagueofLegends")
-{
-cout <<"Good Game";
-name = n;
-}
-else 
-{
-cout<<"Bad Game";
-}
-void setname (string n)
-{
-name = n;
-}
-string getname()
-{
-return name;
-}
-void setplaytime (float p)
-{
-playtime = p;
-}
-float getplaytime ()
-{
-return playtime;
-}
-void displayInfo ()
-{ 
-cout <<"Game Name "<< name<< endl;
-cout << "Time Played"<< playtime<< endl;
-}
-}
+#include <iostream>
+#include <string>
+using namespace std;
+
+	string Game::getName()
+	{
+		return name;
+	}
+	void Game::setName(string n)
+	{
+		name = n;
+	}
+	float Game::getPlaytime()
+	{
+		return playtime;
+	}
+	void Game::setPlaytime(float p)
+	{
+		playtime = p;
+	}
+	Game::Game(string n, float p)
+	{
+		name = n;
+		playtime = p;
+	}
+

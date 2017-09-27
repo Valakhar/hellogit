@@ -5,13 +5,14 @@ using namespace std;
 class Game
 {
 private:
-string name;
-float playtime;
-};
+string name = "";
+float playtime = 0.0;
+
 public:
-Game ()
-{
-name ="";
-playtime = 0.0;
+Game(string n, float p);
+string getName();
+void setName(string n);
+float getPlaytime();
+void setPlaytime(float p);
 };
 #endif

@@ -2,16 +2,26 @@
 #include "Game.h"
 #include <vector>
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
+string name;
+float playtime;
 vector <Game> v1;
-v1.push_back (League);
-v1.push_back (Cod);
-v1.push_back (Fifa);
-v1.push_back (Battlefield);
+for(int i=0; i<4; i++)
+	{
+		cout << "Enter game name"<< endl;
+		cin >> name;
+		cout << "Enter playtime"<< endl;
+		cin >> playtime;
+
+		Game newG(name, playtime);
+		v1.push_back(newG);
+	}
+	cout << endl;
 for (auto v:v1)
 {
-cout <<v.getname()<<""<<v.getplaytime()<<endl;
+cout <<v.getName()<<" "<<v.getPlaytime()<<endl;
 }
 }
